@@ -18,19 +18,20 @@ int main()
 				i[k] = temp;
 			}
 
-		for (int i = 0; i < n; i++)
+		for (int y = 0; y < n; y++)
 		{
-			for (int j = 0; j < m; j++)
+			for (int x = 0; x < m; x++)
 			{
+				if(x-1>=0)
+
+
 
 			}
 		}
 
 
+
+
 	}
-
-
-
-
 	return 0;
 }

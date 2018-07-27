@@ -21,5 +21,8 @@
     <ClCompile Include="삼성SDS B4번 고장난 시계.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="[그래프]백준 4963번 섬의 개수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
