@@ -18,5 +18,8 @@
     <ClCompile Include="삼성SDS B2번 큰수만들기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="삼성SDS B4번 고장난 시계.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
