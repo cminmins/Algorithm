@@ -24,5 +24,8 @@
     <ClCompile Include="[그래프]백준 4963번 섬의 개수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="[그래프]백준 2178번 미로탐색.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
