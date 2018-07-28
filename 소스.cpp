@@ -34,14 +34,17 @@
 	string.substr(시작, 개수)
 	string.size()
 
-
 [정렬]
 //sort
-	<algorithm> sort(시작주소, 끝주소)
+	<algorithm> sort(시작주소, 끝주소, 비교함수)
 
 	그래프만들때 [][] 2차원 배열만들어서 하거나 아니면
 	vector만들어서 .push_back()하고 탐색할때 .size()까지 해서 하던가 만약 조건에 작은것부터 방문이면 sort해야함
 	sort(vector[i].begin(), vector[i].end()) 이렇게 
+	
+//내림차순으로 정렬
+	#include <functional>
+	sort(시작, 끝, greater<int>())
 
 [그래프]
 //DFS
