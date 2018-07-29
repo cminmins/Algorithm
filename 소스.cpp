@@ -41,7 +41,20 @@
 	그래프만들때 [][] 2차원 배열만들어서 하거나 아니면
 	vector만들어서 .push_back()하고 탐색할때 .size()까지 해서 하던가 만약 조건에 작은것부터 방문이면 sort해야함
 	sort(vector[i].begin(), vector[i].end()) 이렇게 
-	
+
+	들어온 입력순서를 유지해서 정렬하는 방법
+	stable_sort() 이게 아마 sort방식에 따라 입력순서가 유지안되는걸 유지되게 만들어줌
+	ex) age, order, string 이렇게 있으면 age순으로 비교하고 같으면 order을 비교
+
+//우선순위큐
+	sort()를 사용해서 정렬할때 시간이 오래 걸린다면
+	priority queue를 사용해보자 시간복잡도는 NlogN vs logN임
+
+	//최소힙
+	priority_queue<타입, vector<타입>, greater<타입>> pq;
+	pq.push / pq.top / pq.pop
+
+
 //내림차순으로 정렬
 	#include <functional>
 	sort(시작, 끝, greater<int>())
