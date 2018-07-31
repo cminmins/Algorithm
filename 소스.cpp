@@ -46,6 +46,9 @@
 	stable_sort() 이게 아마 sort방식에 따라 입력순서가 유지안되는걸 유지되게 만들어줌
 	ex) age, order, string 이렇게 있으면 age순으로 비교하고 같으면 order을 비교
 
+	정렬이 pq가 빠른지 heap이 빠른지 sort가 빠른지 찾아보기
+
+
 //우선순위큐
 	sort()를 사용해서 정렬할때 시간이 오래 걸린다면
 	priority queue를 사용해보자 시간복잡도는 NlogN vs logN임
