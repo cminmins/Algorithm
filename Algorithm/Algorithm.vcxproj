@@ -152,15 +152,20 @@
     <ClCompile Include="[정렬]백준 10825번 국영수.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="[정렬]백준 10989번 수 정렬3.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="[정렬]백준 10989번 수 정렬3.cpp" />
     <ClCompile Include="[정렬]백준 2751번 수 정렬하기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <ClCompile Include="[정렬]백준 2751번 수정렬하기 우선순위큐로 해결.cpp" />
+>>>>>>> parent of dea3488... asd
+=======
     <ClCompile Include="[정렬]백준 2751번 수정렬하기 우선순위큐로 해결.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+>>>>>>> 00b3cadf361e6cc7ca8db8b1f0f67eda6857b551
     <ClCompile Include="삼성SDS B2번 큰수만들기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
