@@ -33,5 +33,17 @@
     <ClCompile Include="삼성SDS B3번 오래된 계산기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="카카오 페스티벌 1번.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="카카오 페스티벌 4번.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="카카오 페스티벌 2번.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="카카오 페스티벌 5번.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
