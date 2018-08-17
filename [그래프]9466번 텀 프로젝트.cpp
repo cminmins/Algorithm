@@ -10,50 +10,45 @@ int main()
 
 	while (t--)
 	{
-		bool visit[100000];
-		int arr[100000];
 		cin >> n;
-		for (int i = 1; i <= n; i++)
-		{
-			cin >> arr[i];
-			visit[i] = false;
-		}
-
-		int num = 0;
-		int temp = 0;
+		int arr[100000] = { 0, };
+		bool visit[100000] = { false, };
 		queue<int> q;
+		int total = n;
+
+		for (int i =1; i<=n; i++)
+			cin >> arr[i];
+
 		for (int i = 1; i <= n; i++)
 		{
-			if (visit[i] == false)
+			int count = 0;
+			for (int j = 0; j <= n; j++)
+				visit[j] = false;
+
+			int start = i;
+			q.push(i);
+			visit[i] = true;
+			count++;
+
+			while (!q.empty())
 			{
-				q.push(i);
-				visit[i] = true;
-				while (!q.empty())
+				int cur = q.front(); q.pop();
+				visit[cur] = true;
+				int des = arr[cur];
+
+				if (cur == des)
+					break;
+				else if (start == des)
 				{
-					int index = q.front(); q.pop();
-					if (index == arr[index])
-					{
-						num += temp;
-						break;
-					}
-					if (i == arr[index])
-						break;
-
-					if (visit[arr[index]] == false)
-					{
-						q.push(arr[index]);
-						visit[arr[index]] = true;
-						temp++;
-					}
-					else
-						num++;
-						
-
+					total -= count;
+					count = 0;
+					break;
 				}
+				else if (visit[des] == false)
+					q.push(des);
 			}
-
 		}
-		cout << num << endl;
+		cout << total << endl;
 	}
 	return 0;
 }
