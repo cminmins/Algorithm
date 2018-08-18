@@ -60,5 +60,8 @@
     <ClCompile Include="[그래프]백준 9466 텀 프로젝트.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="[정렬]백준 11652 카드.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
