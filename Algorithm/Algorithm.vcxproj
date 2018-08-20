@@ -148,7 +148,10 @@
     <ClCompile Include="[그래프]백준 9466 텀 프로젝트.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="[정렬]백준 11652 카드.cpp" />
+    <ClCompile Include="[수학]백준 9613번 GCD합.cpp" />
+    <ClCompile Include="[정렬]백준 11652 카드.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="[정렬]백준 2751번 수 정렬하기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>

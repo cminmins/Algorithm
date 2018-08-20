@@ -63,5 +63,8 @@
     <ClCompile Include="[정렬]백준 11652 카드.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="[수학]백준 9613번 GCD합.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
