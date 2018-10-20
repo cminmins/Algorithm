@@ -1,2 +1,4 @@
-﻿  [수학]백준 9613번 GCD합.cpp
+﻿  [삼성모의] 5656 벽돌깨기.cpp
+c:\users\sungmin\desktop\algorithm\algorithm\[삼성모의] 5656 벽돌깨기.cpp(9): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(243): note: 'freopen' 선언을 참조하십시오.
   Algorithm.vcxproj -> C:\Users\sungmin\Desktop\Algorithm\Debug\Algorithm.exe

@@ -1,3 +1,44 @@
+// Stack 
+// 1) 괄호검사
+[] {} ()
+(일때는 push, )이면 pop 없으면 올바르지않은 문장
+
+재귀 - 피보나치 수열할때 memorization을 사용하면 시간을 줄일수 있음
+
+
+//숫자를 문자로, 문자를 숫자로
+atoi(char*)
+	string str
+	int a = atoi(str.c_str())
+
+stoi(string a)
+
+
+to_string(int a)
+	int a
+	string str = to_string(a)
+
+
+// 자리수 맞추기
+	cout.fill('0')
+	<< setw(2) << 
+
+아니면
+	printf("%02d")
+
+몫포함 3자리
+	<< setprecision(3)<<
+
+// 진수표현
+<< oct <<
+dec/hex
+
+
+// 특정 원소찾기
+int arr[SIZE] = { 10, 20, 30, 40 };
+long idx = find(arr, arr + SIZE, 30) - arr;
+
+
 [입력받기]
 //이렇게하면 space 아니면 ',' 를 구분자로 입력받음
 	while (scanf("%d %d", &a, &b) == 2)
@@ -8,10 +49,43 @@
 		while (scanf("%[^\n]\n", s) == 1)
 		char str[1024]; fgets(str, 1024, stdin); string line(str)
 
-//cin.getline
-	iostream에 선언 된걸로 cin.getline(char[], n)하면 n - 1까지 저장하고 n번째는 NULL로 만듬
-//getline
+// 하나씩 띄워져서 입력 개수 모르게 받을때
+		while(cin >> n)
+
+//버퍼비우는 코드
+		getchar()는 버퍼에서 문자하나를 읽음
+		while (getchar() != '\n');
+
+
+cin.get()하면 char형의 아스키코드로 저장됨(숫자 0은 48) / A 는 65 / a는 97
+// 문자가 이어져 있을때 1개씩 받는법 char
+	char temp
+	cin >> temp 를 반복하면됨
+	
+	char temp;
+	while (cin.get(temp))
+	
+	char temp;
+	while ((temp = cin.get()) != '\n')
+
+// 숫자가 이어져 있을때 1개씩 받는법 int 
+	ex) 123456798123456789
+	int a = cin.get() - 48;
+
+// 문자들이 하나로 죽~~~ 이어져있을때 1개씩 잘라서받기
+	scanf("%1s") 였나 ?
+
+
+// 띄어쓰기 포함해서 '\n'까지 한줄 입력받기
 	getline(입출력, 저장할 string, 어느문자까지 저장할지) 세번째 매개변수입력안하면	기본적으로 '\n'이다
+
+
+// 입력받는 문자열중에서 특정 위치까지 입력받기
+	iostream에 선언 된걸로 cin.getline(char[], n)하면 n - 1까지 저장하고 n번째는 NULL로 만듬
+
+//문자열에서 특정위치까지 자르기
+	string.substr(시작, 개수)
+	string.size()
 
 //버퍼에 남은거 없애기
 		// 이거는 출력버퍼를 비워야하는거지 stdin으로 쓰면 위험하다 비운다는건 목적지로 전부 전달하는걸
@@ -22,20 +96,18 @@
 	"%*c%c" 라는 형식 문자열의 의미는 "stdin 에서 한 문자를 얻어오되 그 값은 버리고 (이 경우 \n 이 버려진다), 
 			그 다음에 한 문자를 얻어와 이에 대응되는 인자 (&c) 에 저장한다" 이기 때문이다.
 
-//버퍼비우는 코드
-		getchar()는 버퍼에서 문자하나를 읽음
-		while (getchar() != '\n');
 
-//문자하나받기
-		cin.get()하면 char형의 아스키코드로 저장됨(숫자 0은 48)
-		scanf("%1s") 였나?	
 
-//문자열에서 특정위치까지 자르기
-	string.substr(시작, 개수)
-	string.size()
+
+
 
 [정렬]
 //sort
+	bool cmp(const Cell &u, const Cell &v) 
+	{
+			return u.val > v.val;
+	}
+
 	<algorithm> sort(시작주소, 끝주소, 비교함수)
 
 	그래프만들때 [][] 2차원 배열만들어서 하거나 아니면
@@ -76,7 +148,8 @@
 		최단거리 찾을때 -> dist[][]를 해서 이전거리 + 1해서 현재 거리 갱신
 
 //bool 변수 초기화할때
-	한번에 초기화 memset(arr[], 채울값, 크기)
+#include <cstring>
+	한번에 초기화 memset(1차, 2차배열, 채울값, sizeof(배열))
 	1Bytes 변수(char, unsigned char 등)를 제외한 변수를 초기화 할 때에는
 	0이외의 값으로 초기화를 하면 안됩니다.
 	그래서 보통 char나 bool형일때만 사용함
@@ -105,3 +178,8 @@
 	s[]를 이용해서 dfs/bfs를 어디에서 시작했는지 알수있음
 		1번에서 시작해서 2 3 4 5 식으로 가면 
 		12345은 1로 같다
+
+
+
+// 자료구조
+// stack, queue, linked list, vector, priory queue, heap 있는걸 생각하고 상황에 맞는거 응용
